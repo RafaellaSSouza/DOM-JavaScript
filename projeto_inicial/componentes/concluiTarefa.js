@@ -1,20 +1,19 @@
 const BotaoConclui = () => {
-    const botaoConclui = document.createElement('button')
+    const botaoConclui = document.createElement('button');
     
-    
-    botaoConclui.innerText = 'Concluir'
+    botaoConclui.innerText = 'Concluir';
 
-    botaoConclui.addEventListener('click', concluirTarefa)
+    botaoConclui.addEventListener('click', concluirTarefa);
 
     return botaoConclui
 }
 
 const concluirTarefa = (evento)=> {
-    const botaoConclui = evento.target 
+    const botaoConclui = evento.target ;
 
-    const tarefaCompleta = botaoConclui.parentElement
+    const tarefaCompleta = botaoConclui.parentElement;
 
-    tarefaCompleta.classList.toggle('done')
+    tarefaCompleta.classList.toggle('done');
 }
 
 export default BotaoConclui
